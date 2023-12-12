@@ -19,7 +19,7 @@
 
     <section id="main-content">
         <div class="hero">
-            <h1>Welcome to My Portfolio</h1>
+            <h1 id="typewriter-text"></h1>
             <p>My passion for engineering came when I first got my hands on an iPod Touch. 8th grade me wanted to see what it was really capable of, and I found a way to jailbreak it and, in the process, learned a lot about technology. I then went on to create my own PCs and build some more for friends and family. Being a nerd started becoming a hobby! It escalated to more complex projects and brings me to where I am now. I know it sounds cliché, but I love to learn! I hope that in this portfolio, covering a wide range of topics in tech, I demonstrate my ability to figure new things out in a short amount of time. Quick thinking and application of that thinking is what I believe makes me strong in this field.</p>
             
             <blockquote>"Engineering is the closest thing to magic that exists in the world." - Elon Musk</blockquote>
@@ -41,3 +41,22 @@
     
 </body>
 </html>
+
+
+<script>
+    const typewriterText = document.getElementById('typewriter-text');
+    const text = 'Welcome to My Portfolio';
+    let index = 0;
+  
+    function typeWriterEffect() {
+      if (index < text.length) {
+        typewriterText.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeWriterEffect, 150); // Adjust typing speed here
+      }
+    }
+  
+    // Start the effect
+    typeWriterEffect();
+  </script>
+  
