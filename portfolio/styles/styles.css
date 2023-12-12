@@ -1,0 +1,285 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #303030;
+    color: #f5f5f5
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    
+}
+
+header img#logo {
+    max-width: 150px;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    color: #d4af37; /* Gold color on hover for navigation links */
+    text-decoration: underline;
+}
+
+a {
+    color: #d4af37; /* Gold color for links */
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #f5f5f5;
+}
+
+.project-info a, .degree-info a {
+    background-color: #d4af37; /* Gold background for project and degree links */
+    color: #1a1a1a; /* Black text on buttons */
+    border: none; /* Remove border */
+}
+
+.project-info a:hover, .degree-info a:hover {
+    background-color: #f5f5f5;
+    color: #1a1a1a;
+}
+
+
+
+
+/* Main Content Section */
+#main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10px;
+}
+
+.hero, .about-me {
+    max-width: 30%;
+}
+
+.hero {
+    background-color: #333333; /* Dark background for hero section */
+    color: #f5f5f5;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    color: #d4af37; /* Gold color for main heading */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.1em; /* Slightly larger paragraph font */
+    line-height: 1.6; /* Improved line spacing */
+    margin-bottom: 20px; /* Space above the blockquote */
+}
+
+blockquote {
+    font-size: 1.2em; /* Larger blockquote font */
+    font-style: italic;
+    margin-left: 20px; /* Indent blockquote */
+    color: #d4af37; /* Gold color for the quote */
+    opacity: 0.9; /* Slightly reduced opacity for a softer look */
+}
+
+.profile-pic {
+    max-width: 350px;
+    border-radius: 50%;
+    margin: 0 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 5);
+}
+
+.about-me {
+    max-width: 30%;
+    padding: 20px; /* Consistent padding with hero section */
+    background-color: #333333; /* Same background for consistency */
+    color: #f5f5f5;
+    margin-bottom: 20px; /* Space below the section */
+}
+
+.about-me h2 {
+    color: #d4af37; /* Gold color for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.about-me p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    font-size: 1em;
+}
+footer p {
+    margin-bottom: 10px; /* Space between text and links */
+}
+
+
+
+
+/* Degree and Certifications Page Styles */
+#degree-content {
+    padding: 20px;
+    text-align: center;
+    background-color: #2a2a2a; /* Dark gray background */
+    color: #f5f5f5;
+}
+
+.degree-entry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute space evenly */
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #333333;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.degree-img {
+    width: 30%; /* Adjusted image width */
+    margin-right: 20px;
+    display: block;
+    border-radius: 10px; /* Optional: added border-radius for aesthetics */
+}
+
+.degree-info {
+    width: 65%; /* Adjusted text container width */
+    padding-left: 20px; /* Added padding for spacing */
+}
+
+.degree-info h2 {
+    font-family: 'Oswald', sans-serif;
+    margin: 0 0 10px 0;
+    font-size: 2em;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.degree-info p, .degree-info ul {
+    font-size: 0.9em;
+    margin: 0;
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+.degree-info > p:first-child {
+    margin-bottom: 10px; /* Add space below the college name and date */
+}
+
+.degree-info > p:last-child {
+    margin-top: 15px; /* Add space above the skills acquired */
+}
+
+
+.degree-info ul {
+    list-style: circle;
+    text-align: left;
+    padding-left: 20px; /* Added padding for list structure */
+    margin-top: 5px;
+}
+
+.degree-entry:not(:last-child) {
+    margin-bottom: 30px; /* Space between entries */
+}
+
+
+
+
+/* Projects and Labs Page Styles */
+#projects-content {
+    padding: 20px;
+    text-align: center;
+    background-color: #2a2a2a; /* Dark gray background */
+    color: #f5f5f5;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+
+.project-entry {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+
+.project-img {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.project-info h2 {
+    font-family: 'Oswald', sans-serif;
+    margin: 0 0 10px 0;
+}
+
+.project-info p {
+    font-size: 1em;
+    margin: 0;
+}
+
+.project-info a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #000;
+    text-decoration: none;
+    border: 1px solid #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.project-entry:hover {
+    background-color: #333333; /* Added hover effect */
+}
+
+
+.project-info a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #main-content, .hero, .about-me, .degree-entry, .project-entry {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .profile-pic, .degree-img, .project-img {
+        max-width: 70%;
+        margin-bottom: 10px;
+    }
+}
